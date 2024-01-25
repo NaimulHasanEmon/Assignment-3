@@ -32,18 +32,32 @@
 
 <body class="mx-5 md:mx-20 lg:mx-28">
     <header>
-        <nav class="my-8">
-            <div class="navbar">
-                <div class="navbar-start">
-                    <div class="dropdown">
-                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
-                                stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M4 6h16M4 12h8m-8 6h16" />
-                            </svg>
+        <div class="sticky z-10 top-3">
+            <nav class="my-8">
+                <div class="navbar">
+                    <div class="navbar-start">
+                        <div class="dropdown">
+                            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                    stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M4 6h16M4 12h8m-8 6h16" />
+                                </svg>
+                            </div>
+                            <ul tabindex="0"
+                                class="menu menu-sm dropdown-content mt-3 z-[1] p-2 rounded-box w-36 bg-slate-600">
+                                <li class="text-[#FF4240]"><a>Home</a></li>
+                                <li><a>About</a></li>
+                                <li><a>Pages</a></li>
+                                <li><a>Blog</a></li>
+                                <li><a>Contact</a></li>
+                            </ul>
                         </div>
-                        <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 rounded-box w-36 bg-slate-600">
+                        <a class="btn btn-ghost text-3xl font-extrabold font-manrope">Hockey<span
+                                class="text-[#FF4240]">’</span>s</a>
+                    </div>
+                    <div class="navbar-center hidden lg:flex">
+                        <ul class="menu menu-horizontal px-1">
                             <li class="text-[#FF4240]"><a>Home</a></li>
                             <li><a>About</a></li>
                             <li><a>Pages</a></li>
@@ -51,33 +65,23 @@
                             <li><a>Contact</a></li>
                         </ul>
                     </div>
-                    <a class="btn btn-ghost text-3xl font-extrabold font-manrope">Hockey<span
-                            class="text-[#FF4240]">’</span>s</a>
+                    <div class="navbar-end"><button class="btn btn-ghost btn-circle">
+                            <div class="hidden md:block lg:block">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                    stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                                </svg>
+                            </div>
+                        </button>
+                        <a class="btn bg-[#FF4240] text-[#FFFFFF] font-manrope font-bold sticky">Button</a>
+                    </div>
                 </div>
-                <div class="navbar-center hidden lg:flex">
-                    <ul class="menu menu-horizontal px-1">
-                        <li class="text-[#FF4240]"><a>Home</a></li>
-                        <li><a>About</a></li>
-                        <li><a>Pages</a></li>
-                        <li><a>Blog</a></li>
-                        <li><a>Contact</a></li>
-                    </ul>
-                </div>
-                <div class="navbar-end"><button class="btn btn-ghost btn-circle">
-                        <div class="hidden md:block lg:block">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
-                                stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
-                            </svg>
-                        </div>
-                    </button>
-                    <a class="btn bg-[#FF4240] text-[#FFFFFF] font-manrope font-bold">Button</a>
-                </div>
-            </div>
-        </nav>
-        <section class="">
-            <div class="carousel w-full h-[300px] lg:h-[550px]">
+            </nav>
+        </div>
+        <!-- Carousel section -->
+        <section>
+            <div class="carousel rounded-2xl w-full h-[300px] lg:h-[550px]">
                 <div id="slide1" class="carousel-item relative w-full h-40 md:h-auto lg:h-auto">
                     <img src="Images/1.png" class="w-full" />
                     <div class="absolute flex gap-4 sm: lg:transform -translate-y-1/2 left-10 right-5 bottom-1">
@@ -92,6 +96,11 @@
                         <a href="#slide1" class="btn btn-circle">❯</a>
                     </div>
                 </div>
+            </div>
+            <div class="relative">
+                <h2>
+                    Meet all the heroes from the field
+                </h2>
             </div>
         </section>
     </header>
