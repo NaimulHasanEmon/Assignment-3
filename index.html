@@ -30,7 +30,7 @@
 
 </head>
 
-<body class="mx-28">
+<body class="mx-5 md:mx-20 lg:mx-28">
     <header>
         <nav class="my-8">
             <div class="navbar">
@@ -43,8 +43,7 @@
                                     d="M4 6h16M4 12h8m-8 6h16" />
                             </svg>
                         </div>
-                        <ul tabindex="0"
-                            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 rounded-box w-52">
+                        <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 rounded-box w-36 bg-slate-600">
                             <li class="text-[#FF4240]"><a>Home</a></li>
                             <li><a>About</a></li>
                             <li><a>Pages</a></li>
@@ -65,27 +64,28 @@
                     </ul>
                 </div>
                 <div class="navbar-end"><button class="btn btn-ghost btn-circle">
-                    <div class="hidden md:block lg:block">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
-                        </svg>
-                    </div>
+                        <div class="hidden md:block lg:block">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                            </svg>
+                        </div>
                     </button>
                     <a class="btn bg-[#FF4240] text-[#FFFFFF] font-manrope font-bold">Button</a>
                 </div>
             </div>
         </nav>
         <section class="">
-            <div class="carousel w-full h-[550px]">
-                <div id="slide1" class="carousel-item relative w-full">
+            <div class="carousel w-full h-[300px] lg:h-[550px]">
+                <div id="slide1" class="carousel-item relative w-full h-40 md:h-auto lg:h-auto">
                     <img src="Images/1.png" class="w-full" />
                     <div class="absolute flex gap-4 sm: lg:transform -translate-y-1/2 left-10 right-5 bottom-1">
                         <a href="#slide2" class="btn btn-circle">❮</a>
                         <a href="#slide2" class="btn btn-circle">❯</a>
                     </div>
                 </div>
-                <div id="slide2" class="carousel-item relative w-full">
+                <div id="slide2" class="carousel-item relative w-full h-40 md:h-auto lg:h-auto">
                     <img src="Images/2.png" class="w-full" />
                     <div class="absolute flex gap-4 lg:transform -translate-y-1/2 left-10 right-5 bottom-1">
                         <a href="#slide1" class="btn btn-circle">❮</a>
@@ -97,7 +97,7 @@
     </header>
     <main>
         <!-- Professional Hockeys Club Section -->
-        <section class="mt-24">
+        <section class="mt-1 md:mt-14 lg:mt-24">
             <div class="flex flex-col items-center gap-20">
                 <div class="flex flex-col items-center gap-6">
                     <h2 class="text-4xl font-manrope font-extrabold">
@@ -110,8 +110,8 @@
                     </p>
                 </div>
                 <!-- Progress -->
-                <div class="lg:grid-cols-4 gap-40 font-manrope">
-                    <div class="flex flex-col space-y-5 items-center">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 lg:gap-14 font-manrope">
+                    <div class="flex flex-col space-y-5 mt-10 lg:mt-0 items-center">
                         <div class="radial-progress text-[#FF4240]" style="--value:87;" role="progressbar">87%</div>
                         <h3 class="text-xl font-semibolde">
                             Prayer Facility
@@ -120,7 +120,7 @@
                             Amet consectetur. Condimentum dignissim adipiscing .
                         </p>
                     </div>
-                    <div class="flex flex-col space-y-5 items-center">
+                    <div class="flex flex-col space-y-5 mt-10 lg:mt-0 items-center">
                         <div class="radial-progress text-[#49D293]" style="--value:95;" role="progressbar">95%</div>
                         <h3 class="text-xl font-semibolde">
                             Prayer Facility
@@ -129,7 +129,7 @@
                             Amet consectetur. Condimentum dignissim adipiscing .
                         </p>
                     </div>
-                    <div class="flex flex-col space-y-5 justify-center items-center">
+                    <div class="flex flex-col space-y-5 mt-10 lg:mt-0 justify-center items-center">
                         <div class="radial-progress text-[#FFB546]" style="--value:90;" role="progressbar">90%</div>
                         <h3 class="text-xl font-semibolde">
                             Prayer Facility
@@ -138,7 +138,7 @@
                             Amet consectetur. Condimentum dignissim adipiscing .
                         </p>
                     </div>
-                    <div class="flex flex-col space-y-5 items-center">
+                    <div class="flex flex-col space-y-5 mt-10 lg:mt-0 items-center">
                         <div class="radial-progress text-[#4C8DF1]" style="--value:80;" role="progressbar">80%</div>
                         <h3 class="text-xl font-semibolde">
                             Prayer Facility
@@ -155,7 +155,7 @@
             <div>
                 <div class="flex flex-col items-center gap-6">
                     <h3 class="text-4xl font-manrope font-extrabold">Program Sections</h3>
-                    <p class="font-manrope font-medium">
+                    <p class="font-manrope font-medium" style="text-align: center;">
                         Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna
                         in sit nullam proin.
                     </p>
@@ -197,7 +197,7 @@
                     </div>
                     <div class="card flex justify-cente lg:justify-centerr image-full mt-6">
                         <figure>
-                            <img src="Images/4.png" alt="Professional Program"/>
+                            <img src="Images/4.png" alt="Professional Program" />
                         </figure>
                         <div class="card-body lg:relative lg:w-[520px]">
                             <div class="lg:absolute top-48">
@@ -218,7 +218,7 @@
             </div>
         </section>
         <!-- Our New Products -->
-        <section class="mt-10 lg:mt-24">
+        <section class="mt-24">
             <div class="flex flex-col items-center gap-6">
                 <h3 class="text-4xl font-manrope font-extrabold">Our New Products</h3>
                 <p class="flex font-manrope font-medium" style="text-align: center;">
@@ -635,15 +635,15 @@
         <!-- Clients Question -->
         <section class="mt-24">
             <div>
-                <div class="flex flex-col items-center gap-6">
-                    <h3 class="text-4xl font-manrope font-extrabold">Program Sections</h3>
-                    <p class="font-manrope font-medium mb-20" style="text-align: center;">
+                <div class="flex flex-col items-center gap-6 mb-20">
+                    <h3 class="text-4xl font-manrope font-extrabold">Clients Question</h3>
+                    <p class="font-manrope font-medium" style="text-align: center;">
                         Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat <br>dolor. Purus
                         urna in sit nullam proin.
                     </p>
                 </div>
-                <div class="lg:flex gap-1 justify-center items-center">
-                    <div class="flex justify-center mb-10 lg:flex-1">
+                <div class="lg:flex lg:gap-1 justify-center items-center">
+                    <div class="flex justify-center mb-8 lg:flex-1 lg:mb-0">
                         <img src="Images/11.png" alt="Clients Question">
                     </div>
                     <!-- Accordion -->
@@ -680,7 +680,7 @@
                                 </div>
                             </div>
                             <div class="collapse collapse-plus bg-base-200 p-1">
-                                <input type="radio" name="my-accordion-3"/>
+                                <input type="radio" name="my-accordion-3" />
                                 <div class="collapse-title text-xl font-bold">
                                     Ski Touring
                                 </div>
@@ -798,17 +798,18 @@
                                         class="input input-bordered" />
                                 </label>
                             </div>
-                        </div>
+                        </div>Send Message
                         <!-- Message -->
                         <div>
                             <label class="form-control">
                                 <div class="label">
                                     <span class="label-text font-manrope font-bold text-xl">Message</span>
                                 </div>
-                                <input type="text" placeholder="Write your message"
-                                    class="input input-bordered h-60 items-start" />
+                                <input type="text" placeholder="Write your message" class="input input-bordered h-60" />
                             </label>
-                            <button class="btn bg-[#FF4240] text-[#FFFFFF] lg:w-[600px] mt-3">Secondary</button>
+                            <button
+                                class="btn bg-[#FF4240] text-[#FFFFFF] h-20 lg:h-0 lg:w-[600px] mt-3 font-manrope font-bold text-xl">Send
+                                Message</button>
                         </div>
                     </div>
                 </div>
@@ -819,14 +820,15 @@
             </div>
         </section>
     </main>
-    <footer class="footer p-10 bg-base-200 text-base-content">
-        <aside>
+    <footer class="footer p-7 bg-base-200">
+        <aside class="flex flex-col items-center md:items-start lg:items-start">
             <h1 class="text-3xl font-manrope font-extrabold">Get In Touch</h1>
-            <p>Lorem ipsum dolor sit amet <br> consectetur adipisicing elit. <br> Dolores eos sint nesciunt rem quos nihil.</p>
+            <p>Lorem ipsum dolor sit amet <br> consectetur adipisicing elit. <br> Dolores eos sint nesciunt rem quos
+                nihil.</p>
             <div>
-                <div class="lg:flex gap-4">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
-                        class="w-6 h-6">
+                <div class="lg:flex gap-3">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="w-6 h-6 text-[#FF4240]">
                         <path stroke-linecap="round" stroke-linejoin="round"
                             d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" />
                     </svg>
@@ -834,9 +836,9 @@
                 </div>
             </div>
             <div>
-                <div class="flex gap-4">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
-                        class="w-6 h-6">
+                <div class="flex gap-3">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="w-6 h-6 text-[#FF4240]">
                         <path stroke-linecap="round" stroke-linejoin="round"
                             d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 0 1-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 0 0-1.091-.852H4.5A2.25 2.25 0 0 0 2.25 4.5v2.25Z" />
                     </svg>
@@ -844,22 +846,24 @@
                 </div>
             </div>
         </aside>
-        <nav>
-            <header class="footer-title">Company</header>
-            <a class="link link-hover">About us</a>
-            <a class="link link-hover">Leadership</a>
-            <a class="link link-hover">Careers</a>
-            <a class="link link-hover">News & Article</a>
-            <a class="link link-hover">Legal Notice</a>
-        </nav>
-        <nav>
-            <header class="footer-title">Support</header>
-            <a class="link link-hover">Help Center</a>
-            <a class="link link-hover">FAQ</a>
-            <a class="link link-hover">Ticket Support</a>
-            <a class="link link-hover">Contact Us</a>
-        </nav>
-        <nav>
+        <div class="flex gap-20 md:gap-16 lg:gap-20 xl:gap-56">
+            <nav class="flex flex-col items-center md:items-start lg:items-start">
+                <header class="footer-title">Company</header>
+                <a class="link link-hover">About us</a>
+                <a class="link link-hover">Leadership</a>
+                <a class="link link-hover">Careers</a>
+                <a class="link link-hover">News & Article</a>
+                <a class="link link-hover">Legal Notice</a>
+            </nav>
+            <nav class="flex flex-col items-center md:items-start lg:items-start">
+                <header class="footer-title">Support</header>
+                <a class="link link-hover">Help Center</a>
+                <a class="link link-hover">FAQ</a>
+                <a class="link link-hover">Ticket Support</a>
+                <a class="link link-hover">Contact Us</a>
+            </nav>
+        </div>
+        <nav class="flex flex-col items-center md:items-start lg:items-start">
             <header class="footer-title">Services</header>
             <a class="link link-hover">Academy</a>
             <a class="link link-hover">Group Lesson</a>
